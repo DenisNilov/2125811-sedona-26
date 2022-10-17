@@ -73,6 +73,12 @@
         </li>
         <li class="advantages__item advantages__item__image advantages__item__image--sity">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/sedona-city--desktop.webp 1x, img/sedona-city--desktop@2x.webp 2x" width="800">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/sedona-city--tablet.webp 1x, img/sedona-city--tablet@2x.webp 2x" width="512">
+            <source type="image/webp" srcset="img/sedona-city--mobile.webp 1x, img/sedona-city--mobile@2x.webp 2x"
+              width="320">
             <source media="(min-width: 1200px)"
               srcset="img/sedona-city--desktop.jpg 1x, img/sedona-city--desktop@2x.jpg 2x" width="800">
             <source media="(min-width: 768px)"
@@ -173,32 +179,36 @@
         <h2 class="visually-hidden">Социальные сети.</h2>
         <ul class="social__list">
           <li class="social__item">
-            <!-- Cделать иконки -->
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__image-icon" src="img/icons/icon-vk.svg" width="24" height="14" alt="иконка ВКонтакте">
+              <svg class="social__image-icon" width="24" height="14">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
             <span class="visually-hidden">ВКонтакте.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__image-icon" src="img/icons/icon-telegram.svg" width="23" height="17" alt="иконка Телеграмм">
+              <svg class="social__image-icon" width="22" height="18">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
             </a>
             <span class="visually-hidden">Телеграмм.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__image-icon" src="img/icons/icon-youtube.svg" width="20" height="14" alt="иконка Youtube">
+              <svg class="social__image-icon" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
             <span class="visually-hidden">Youtube.</span>
           </li>
         </ul>
       </section>
       <section class="page-footer__copyright copyright">
-        <h2 class="copyright__text">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg aria-hidden="true" focusable="false" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          <h2 class="copyright__text">Разработано</h2>
+          <svg class="copyright__link-icon" width="27" height="35" fill="currentColor">
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
           </svg>
         </a>
       </section>

@@ -65,8 +65,8 @@
           <picture>
             <source media="(min-width: 1200px)"
               srcset="img/open-spaces--desktop.jpg 1x, img/open-spaces--desktop@2x.jpg 2x" width="1200">
-            <source media="(min-width: 768px)" srcset="img/open-spaces--tablet@2x.jpg 1x, img/open-spaces--tablet.jpg 2x"
-              width="648">
+            <source media="(min-width: 768px)"
+              srcset="img/open-spaces--tablet@2x.jpg 1x, img/open-spaces--tablet.jpg 2x" width="648">
             <img class="photo__image" src="img/open-spaces.jpg" alt="Неродные просторы" width="280" height="280"
               srcset="img/open-spaces@2x.jpg 2x">
           </picture>
@@ -90,7 +90,8 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/flora--desktop.jpg 1x, img/flora--desktop@2x.jpg 2x"
               width="400">
-            <source media="(min-width: 768px)" srcset="img/flora--tablet.jpg 1x, img/flora--tablet@2x.jpg 2x" width="324">
+            <source media="(min-width: 768px)" srcset="img/flora--tablet.jpg 1x, img/flora--tablet@2x.jpg 2x"
+              width="324">
             <img class="photo__image" src="img/flora.jpg" alt="Местная растительность" width="280" height="280"
               srcset="img/flora@2x.jpg 2x">
           </picture>
@@ -112,8 +113,8 @@
         </li>
         <li class="photo__item photo__item--road-north">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/road-north--desktop.jpg 1x, img/road-north--desktop@2x.jpg 2x"
-              width="400">
+            <source media="(min-width: 1200px)"
+              srcset="img/road-north--desktop.jpg 1x, img/road-north--desktop@2x.jpg 2x" width="400">
             <source media="(min-width: 768px)" srcset="img/road-north--tablet.jpg 1x, img/road-north--tablet@2x.jpg 2x"
               width="324">
             <img class="photo__image" src="img/road-north.jpg" alt="Местная растительность" width="280" height="280"
@@ -169,8 +170,8 @@
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
       <picture class="video__wrapper">
-        <source media="(min-width: 1200px)" srcset="img/video-poster--desktop.jpg 1x, img/video-poster--desktop@2x.jpg 2x"
-          width="800">
+        <source media="(min-width: 1200px)"
+          srcset="img/video-poster--desktop.jpg 1x, img/video-poster--desktop@2x.jpg 2x" width="800">
         <source media="(min-width: 768px)" srcset="img/video-poster--tablet.jpg 1x, img/video-poster--tablet@2x.jpg 2x"
           width="648">
         <img class="video__presentation" src="img/video-poster.jpg" alt="Картинка для Видео" width="280" height="177"
@@ -189,30 +190,35 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__image-icon" src="img/icons/icon-vk.svg" width="24" height="14" alt="иконка ВКонтакте.">
+              <svg class="social__image-icon" width="24" height="14">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
             <span class="visually-hidden">ВКонтакте.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <img class="social__image-icon" src="img/icons/icon-telegram.svg" width="23" height="17" alt="иконка Телеграмм">
+              <svg class="social__image-icon" width="22" height="18">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
             </a>
             <span class="visually-hidden">Телеграмм.</span>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <img class="social__image-icon" src="img/icons/icon-youtube.svg" width="20" height="14" alt="иконка Youtube">
+              <svg class="social__image-icon" width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
             <span class="visually-hidden">Youtube.</span>
           </li>
         </ul>
       </section>
       <section class="page-footer__copyright copyright">
-        <h2 class="copyright__text">Разработано:</h2>
+        <h2 class="copyright__text">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg aria-hidden="true" focusable="false" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" />
+          <svg class="copyright__link-icon" width="27" height="35">
+            <use xlink:href="img/sprite.svg#icon-academy"></use>
           </svg>
         </a>
       </section>

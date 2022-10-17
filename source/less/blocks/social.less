@@ -1,36 +1,43 @@
 /*social*/
-.social{
+.social {
   width: 158px;
 }
 
-.social__list{
+.social__list {
   width: 100%;
   .list-reset();
   display: flex;
   justify-content: space-between;
 }
 
-.social__item{
+.social__item {
   width: 48px;
   height: 48px;
   background-color: @blue;
+
+  & :hover {
+    background-color: #5496BD;
+  }
 }
 
-.social__link{
+.social__link {
   .link-reset();
-  
-  
-  &--vkontakte{
-
-  }
-  &--telegram{
-
-  }
-  &--youtube{
-
-  }
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.social__image-icon{
-  padding: 16px 13px;
+.social__image-icon {
+  fill: @white;
+  position: absolute;
+  top: 17px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  & :active {
+    opacity: .3;
+  }
+
 }
