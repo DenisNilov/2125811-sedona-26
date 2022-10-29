@@ -1,31 +1,35 @@
 /*likes*/
-.likes{
+.likes {
   margin-right: auto;
-  }
+}
 
-  .likes__image {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    &:hover{
-      color: lighten(@black, 50%);
-    }
-    @media (min-width: @desktop-width) {
-      color: @white;
-    }
-  }
+.likes__image {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
 
-  .likes__num{
-    font-weight: 700;
-    font-size: 14px;
-    @media (min-width: @desktop-width) {
-      color: @white;
-    }
+.likes__image__icon {
+  opacity: 0.3;
+  width: 23px;
+  height: 21px;
+  @media (min-width: @desktop-width) {
+    fill: @white;
+    opacity: 1;
   }
+}
 
-  .like__btn{
-    @media (min-width: @desktop-width) {
-      color: @white;
-      opacity: 1;
-    }
+.likes__num {
+  font-weight: 700;
+  font-size: 14px;
+  @media (min-width: @desktop-width) {
+    color: @white;
   }
+}
+
+.like__btn {
+  @media (min-width: @desktop-width) {
+    color: @white;
+    opacity: 1;
+  }
+}
