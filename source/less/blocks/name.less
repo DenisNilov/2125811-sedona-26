@@ -1,6 +1,7 @@
 /*name*/
-.name{
+.name {
   padding: 30px 20px 40px;
+
   @media (min-width: @tablet-width) {
     padding: 0;
     border-right: 1px solid @button-disable;
@@ -8,40 +9,35 @@
   }
 }
 
-.namе__title{
-
-  &--font{
-
-  }
-}
-
-.namе__list{
+.namе__list {
   @media (min-width: @tablet-width) {
     width: 280px;
     box-sizing: border-box;
     padding-bottom: 16px;
   }
+
   @media (min-width: @desktop-width) {
     width: 430px;
   }
 }
 
-.namе__item{
+.namе__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 17px;
-  &:last-child{
+
+  &:last-child {
     margin-bottom: 0;
   }
 }
 
-.namе__desc{
+.namе__desc {
   .description__block();
   padding-left: 17px;
   text-align: left;
 }
 
-.name__input{
+.name__input {
   border: 0;
   background-color: @input-color;
   padding: 18px 17px;
@@ -50,20 +46,22 @@
   text-transform: none;
   outline: 0;
   outline-offset: 0;
-  &:hover{
+
+  &:hover {
     background-color: @button-disable;
     color: @black;
   }
-  &:active{
+
+  &:active {
     border: 3px solid @button-disable;
   }
-  &:focus{
+
+  &:focus {
     background-color: @white;
     border: 3px solid @button-disable;
-
-  }
-  &::placeholder{
-    color: rgba(0, 0, 0, .3);
   }
 
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }

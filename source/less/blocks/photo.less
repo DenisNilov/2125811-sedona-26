@@ -9,7 +9,6 @@
   }
 }
 
-
 .photo__list {
   .list-reset();
 
@@ -22,20 +21,12 @@
 .photo__item {
   .list-reset();
   padding: 24px 20px;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) {
     border-top: none;
     padding: 0;
   }
-
-  &--open-spaces {}
-
-  &--flora {}
-
-  &--road-north {}
-
-  &--devil-bridge {}
 
   @media (min-width: @desktop-width) {
     position: relative;
@@ -49,14 +40,12 @@
     flex-direction: column;
     padding: 22px 20px;
     background-color: #f2f2f2;
-
-
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     z-index: 3;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     box-sizing: border-box;
     background-color: #0000004d;
@@ -96,8 +85,6 @@
     right: 17px;
     top: 36px;
   }
-
-
 }
 
 .photo__image {

@@ -1,9 +1,7 @@
 /*button*/
 .button {
   .button();
-  &--search {
 
-  }
   &:hover {
     background-color: @button-hover;
   }
@@ -16,15 +14,18 @@
   &:disabled {
     background-color: @button-disable;
   }
+
   &--modal-error {
     font-size: 18px;
     padding: 20px 64px 20px 63px;
     margin-left: 27px;
     width: 180px;
+
     @media (min-width: @tablet-width) {
       width: 272px;
     }
   }
+
   &--modal-success {
     font-size: 18px;
     width: 280px;

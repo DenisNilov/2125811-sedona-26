@@ -1,50 +1,47 @@
-/*contact*/ /*25.08*/
-.contact{
+/*contact*/
+.contact {
   padding: 30px 20px 35px;
+
   @media (min-width: @tablet-width) {
     padding: 0;
     padding-left: 44px;
     margin: 0;
     margin-top: -129px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 64px;
   }
 }
 
-.contacts__title{
-  &--font{
-
-  }
-}
-
-.contact__list{
+.contact__list {
   width: 402px;
 }
 
 .contact__item {
   .list-reset();
-  &:first-child{
+
+  &:first-child {
     margin-bottom: 16px;
   }
 }
 
-.contact__desc{
+.contact__desc {
   .description__block();
 }
 
-.contact__input-container{
+.contact__input-container {
   display: grid;
   grid-template-columns: 1fr 58px;
+
   @media (min-width: @desktop-width) {
-  width: 402px;
+    width: 402px;
   }
 }
 
-.contact__input{
+.contact__input {
   width: 222px;
   box-sizing: border-box;
-  background-color: #f2f2f2ff;
   border: 0;
   background-color: @input-color;
   padding: 15px 17px;
@@ -53,27 +50,31 @@
   text-transform: none;
   outline: 0;
   outline-offset: 0;
+
   @media (min-width: @desktop-width) {
     width: 100%;
   }
-&:hover{
-  background-color: @button-disable;
+
+  &:hover {
+    background-color: @button-disable;
     color: @black;
-}
-&:active{
-  border: 3px solid @button-disable;
-}
-&:focus{
-  background-color: @white;
-  border: 3px solid @button-disable;
+  }
 
-}
-&::placeholder{
-  color: rgba(0, 0, 0, .3);
-}
+  &:active {
+    border: 3px solid @button-disable;
+  }
+
+  &:focus {
+    background-color: @white;
+    border: 3px solid @button-disable;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
-.contact__input__icon{
-background-color: #E6E6E6;
-padding: 17px;
+.contact__input__icon {
+  background-color: #e6e6e6;
+  padding: 17px;
 }

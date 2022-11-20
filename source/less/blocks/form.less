@@ -1,61 +1,62 @@
 /*form*/
-.form{
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
     grid-template-rows: repeat(5, auto);
     width: 648px;
   }
+
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(2, 480px);
     width: 961px;
   }
 }
 
-.form__item{
+.form__item {
   border: none;
   border-top: 1px solid @button-disable;
   min-width: 0;
-  /* margin: 0; */
-  /* width: 100%; */
   box-sizing: border-box;
+
   @media (min-width: @tablet-width) {
     border-top: none;
   }
 }
 
-.form__title{
+.form__title {
   .heading();
   float: left;
   width: 100%;
   margin-bottom: 22px;
+
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 }
 
-.form__list{
+.form__list {
   float: left;
   width: 100%;
   .list-reset();
-  @media (min-width: @tablet-width) {
-    
-  }
 }
 
-.form__button{
+.form__button {
   width: 280px;
   margin: 0 20px;
   margin-top: 57px;
   padding: 16px 40px;
+
   @media (min-width: @tablet-width) {
-  margin-right: 0px;
-  width: 324px;
-}
-@media (min-width: @desktop-width) {
-  margin-left: 85px;
-}
+    margin-right: 0;
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 85px;
+  }
 }

@@ -1,5 +1,5 @@
 /*button(mixin)*/
-.button(){
+.button() {
   cursor: pointer;
   background-color: @button-default;
   color: @white;
@@ -13,7 +13,7 @@
 }
 
 /*description__block (mixin)*/
-.description__block(){
+.description__block() {
   font-family: @font-family-base;
   font-size: @font-size-base;
   font-weight: 400;
@@ -25,7 +25,7 @@
 }
 
 /*heading(mixin)*/
-.heading(){
+.heading() {
   font-family: @font-family-base;
   font-size: 18px;
   font-weight: 700;
@@ -61,28 +61,30 @@
 }
 
 /*.border-box*/
-.border-box(){
+.border-box() {
   box-sizing: border-box;
 }
 
 /*display-block*/
-.display-block(){
+.display-block() {
   display: block;
 }
 
-/*position-block*//*Подтянуть основной блок к шапке*/
-.position-block(){
+/*position-block*/
+.position-block() {
   position: relative;
   bottom: 40px;
+
   @media (min-width: @tablet-width) {
     bottom: 97px;
   }
 }
 
-/*position-block*//*Подтянуть подвал к основному блоку*/
-.position-unblock(){
+/*position-block*/
+.position-unblock() {
   position: relative;
   bottom: 40px;
+
   @media (min-width: @tablet-width) {
     bottom: 97px;
   }
